@@ -1,7 +1,9 @@
 
-# SHAPEffects: 'A feature selection method based on Shapley values robust to concept shift in regression'
+# Code to accompany 'A feature selection method based on Shapley values robust to concept shift in regression'
 
-This repository has been created in order to allow the reproducibility of the results of the paper 'A feature selection method based on Shapley values robust to concept shift in regression'.
+This repository has been created in order to allow the reproducibility of the results of the paper 'A feature selection method based on Shapley values robust to concept shift in regression'
+
+**Carlos Sebastián, Carlos E. González-Guillén**
 
 ## Abstract
 
@@ -28,8 +30,7 @@ In this case the proposed algorithm improves the results significantly.
 
 
 
-## Authors
+## Author
 
 - Carlos Sebastián Martínez-Cava, Fortia Energía, UPM.
-- Carlos E. González Guillén, UPM.
 
