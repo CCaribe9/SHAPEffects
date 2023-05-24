@@ -98,14 +98,16 @@ class FeatureSelector:
                     continue
                 break
             self.maes[mae] = self.X_train_modded.columns
-            self.best_mae_columns = self.X_train_modded.columns
+            if mae <= self.best_mae:
+                self.best_mae = mae
+                self.best_mae_columns = self.X_train_modded.columns
 
         print("\nStarting core module")
         print("--------------------")
 
         iteration = 0
         features_to_drop_2 = [None]
-        while (len(features_to_drop_2) != 0) and (len(self.X_train_modded.columns) > 0):
+        while (len(features_to_drop_2) != 0) and (len(self.X_train_modded.columns) > 1):
             print("\nIteration", iteration+1)
             fitted_model = build_model(self.X_train_modded,
                                        self.y_train, 
